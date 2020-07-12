@@ -1,0 +1,266 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+    padding: 0px;
+}
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set widths on the form inputs since otherwise they're 100% wide */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    .jumbotron {
+        margin-top: 20px;
+    }
+
+    .body-content {
+        padding: 0;
+    }
+}
+
+/*#region
+|------------------------------------------------------------------------------
+| general
+|------------------------------------------------------------------------------
+*/
+
+.col-center {
+    float: none;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.container-fluid {
+    padding: 0px !important;
+}
+
+.card {
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.24), 0px 0px 2px rgba(0, 0, 0, 0.12);
+}
+
+.card-body {
+    padding: 0px 14px;
+}
+
+.card-img-top {
+    width: 100%;
+    max-height: 160px;
+    min-height: 138px;
+}
+
+.display-flex {
+    display: flex !important;
+}
+
+@media (min-width: 767px) {
+    .display-flex {
+        display: block !important;
+    }
+}
+
+.tab-content .col-md-11 {
+    padding-left: 8px;
+    padding-right: 8px;
+    
+}
+/*#endregion */
+.p-3{/*espacio de los png*/
+    margin-left: 10%;
+}
+
+/*
+|------------------------------------------------------------------------------
+| footer
+|------------------------------------------------------------------------------
+*/
+.bg-footer {
+    background-color: #373737;
+    padding: 20px 0 10px;
+}
+
+.footer-link a {
+    color: #ffffff;
+    line-height: 35px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all 0.5s;
+}
+
+    .footer-link a:hover {
+        color: #0F60D5;
+    }
+
+.contact-info {
+    color: #acacac;
+    font-size: 14px;
+}
+
+.footer-social-icon {
+    font-size: 15px;
+    height: 34px;
+    width: 34px;
+    line-height: 34px;
+    border-radius: 3px;
+    text-align: center;
+    display: inline-block;
+}
+/*#endregion */
+
+
+/*Metodo para  aumentar imagen*/
+
+.Zoom {
+    /* Aumentamos el ancho y la altura durante 1 segundo */
+    transition: width 1s, height 1s, transform 1s;
+    -moz-transition: width 1s, height 1s, -moz-transform 1s;
+    -webkit-transition: width 1s, height 1s, -webkit-transform 1s;
+    -o-transition: width 1s, height 1s,-o-transform 1s;
+}
+
+    .Zoom:hover {
+     
+        transform: scale(1.1);
+        -moz-transform: scale(1.1); /* Firefox */
+        -webkit-transform: scale(1.1); /* Chrome - Safari */
+        -o-transform: scale(1.1); /* Opera */
+    }
+
+    /*#END*/
+
+    /*Darle espacio entre los botones*/
+.margin-left {
+    margin-left: 10px !important;
+}
+
+.margin-right {
+    margin-right: 10px !important;
+}
+
+.margin-left-Vermas
+{
+    margin-left: 160px !important;
+    margin-bottom: 10px ;
+}
+
+.margin-left-Dest {
+    margin-left: 235px !important;
+    margin-bottom: 10px;
+}
+
+/*END*/
+
+/*MENU*/
+
+.navbar .dropdown-toggle, .navbar .dropdown-menu a {
+    cursor: pointer;
+    
+   
+}
+
+.navbar .dropdown-item.active, .navbar .dropdown-item:active {
+    color: inherit;
+    text-decoration: none;
+    background-color: inherit;
+}
+
+.navbar .dropdown-item:focus, .navbar .dropdown-item:hover {
+    color: #16181b;
+    text-decoration: none;
+    background-color: #C7F8B0;
+
+}
+
+@media (min-width: 767px) {
+    .navbar .dropdown-toggle:not(.nav-link)::after {
+        
+        display: inline-block;
+        width: 0;
+        height: 0;
+        margin-left: .5em;
+        vertical-align: 0;
+        border-bottom: .3em solid transparent;
+        border-top: .3em solid transparent;
+        border-left: .3em solid;
+        
+    }
+} /*Fin menu*/
+
+.foot{
+    margin-top: 20px;
+    margin-left: 10%;
+}
+.p-2{/*fondo del div arriba del menu*/
+    background-color: #C7F8B0;
+}
+.flecha{
+    margin-top: 20%;
+    display: inline-block;
+}
+.tl{
+   
+   margin-left:auto; margin-right:0;
+}
+.img{
+    display: inline-block;
+}
+/************************Codigo para subir a la principal***************************/
+
+#backtotop.visible {
+    visibility: visible;
+    opacity: .5;
+}
+
+
+#backtotop {
+    color: #FFF;
+    background-color: transparent;
+}
+
+#backtotop {
+    z-index: 999;
+    display: inline-block;
+    position: fixed;
+    visibility: hidden;
+    bottom: 20px;
+    right: 20px;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 16px;
+    text-align: center;
+    opacity: .2;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+}
+
+ ::before, *::after {
+    transition: all .3s ease-in-out;
+}
+
+ ::before, *::after {
+    box-sizing: border-box;
+}
+
+a:-webkit-any-link {
+
+    cursor: pointer;
+   
+}
+
+.centrado{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+  }
